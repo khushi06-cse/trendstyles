@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fashion Store Collection</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: #f9f9f9; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        /* Isse saare cards ek line me set ho jayenge */
+        .collection-grid { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            gap: 25px; 
+            margin-top: 20px; 
+        }
+        .card { 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            width: 300px; 
+            padding: 15px; 
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Hover karne par card thoda upar uthega */
+        }
+        .model-img { 
+            width: 100%; 
+            height: 380px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+        .title { 
+            font-size: 18px; 
+            font-weight: bold; 
+            margin: 15px 0; 
+            color: #222;
+        }
+        .btn { 
+            display: block; 
+            padding: 10px; 
+            margin: 8px 0; 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            font-size: 14px;
+        }
+        .flipkart { background-color: #2874f0; }
+        .meesho { background-color: #f43397; }
+        .btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+   <div class="navbar">
+    <a href="#" class="brand-logo">✨ TrendyStyles</a>
+    <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Find your perfect look from top stores</p>
+</div>
+
+    <!-- Yeh hai Grid jo saare cards ko line me rakhega -->
+    <div class="collection-grid">
+        
+        <!-- Card 1 (Yellow Outfit) -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500" alt="Model 1" class="model-img">
+            <div class="title">Stylish Casual Outfit</div>
+            <a href="https://fktr.in/3swEp09" target="_blank" class="btn flipkart">Buy on Flipkart</a>
+            <a href="https://www.meesho.com/women-printed-rayon-co-ord-set-shirt-collar-top-with-wide-leg-pant/p/fwr8uk" target="_blank" class="btn meesho">Buy on Meesho</a>
+        </div>
+
+        <!-- Card 2 (Pink/Red Dress) -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500" alt="Model 2" class="model-img">
+            <div class="title">Elegant Party Dress</div>
+            <a href="https://fktr.in/3IPSFM9" target="_blank" class="btn flipkart">Buy on Flipkart</a>
+            <a href="https://www.meesho.com/tessavegas-womens-a-line-midi-maxi-sweetheart-neck-and-square-back-with-puff-sleeve-dress/p/6ucse2" target="_blank" class="btn meesho">Buy on Meesho</a>
+        </div>
+
+        <!-- Card 3 (Summer Vibe) -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500" alt="Model 3" class="model-img">
+            <div class="title">Trendy Summer Look</div>
+            <a href="https://fktr.in/4TG6aj7" target="_blank" class="btn flipkart">Buy on Flipkart</a>
+            <a href="https://www.meesho.com/trendy-women-brown-printed-fit-flare-calf-length-daily-wear-office-wear-outfit-summer-dress-for-women/p/c23tthg"target="_blank" class="btn meesho">Buy on Meesho</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
